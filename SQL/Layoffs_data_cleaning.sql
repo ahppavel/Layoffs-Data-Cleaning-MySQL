@@ -102,10 +102,6 @@ FROM layoffs_staging2
 GROUP BY company
 ORDER BY company;
 
-UPDATE layoffs_staging2
-SET company ='United States'
-WHERE company = 'United States.';
-
 SELECT * FROM layoffs_staging2;
 -- location check 
 SELECT DISTINCT location,COUNT(*)
